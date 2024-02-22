@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C782F2BA-7932-42BD-AFF0-FD77E9222F44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Final_Culminating_Game___Braedan_Chappel</RootNamespace>
+    <AssemblyName>Final Culminating Game - Braedan Chappel</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plasma.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftRun11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dead9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftAttack13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doomkeys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teleporter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\802.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\803.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\602.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\603.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\402.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\403.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DEADPLAYER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0070.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0072.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0074.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0076.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0082.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0084.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0086.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0088.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0092.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0094.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0096.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0098.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0116.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0148.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0154.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0158.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0166.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0168.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0174.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Plasma.wav" />
+    <None Include="bin\Debug\Death.wav" />
+    <Content Include="Logo.ico" />
+    <None Include="Resources\Level1_01.wav" />
+    <None Include="Resources\Level2_03.wav" />
+    <None Include="Resources\RightBossAttack65.png" />
+    <None Include="Resources\RightBossAttack64.png" />
+    <None Include="Resources\RightBossAttack63.png" />
+    <None Include="Resources\RightBossAttack62.png" />
+    <None Include="Resources\RightBossAttack61.png" />
+    <None Include="Resources\RightBossAttack60.png" />
+    <None Include="Resources\RightBossAttack59.png" />
+    <None Include="Resources\RightBossAttack58.png" />
+    <None Include="Resources\RightBossAttack57.png" />
+    <None Include="Resources\RightBossAttack56.png" />
+    <None Include="Resources\RightBossAttack55.png" />
+    <None Include="Resources\RightBossAttack54.png" />
+    <None Include="Resources\RightBossAttack53.png" />
+    <None Include="Resources\RightBossAttack52.png" />
+    <None Include="Resources\RightBossAttack51.png" />
+    <None Include="Resources\RightBossAttack50.png" />
+    <None Include="Resources\RightBossAttack49.png" />
+    <None Include="Resources\RightBossAttack48.png" />
+    <None Include="Resources\RightBossAttack47.png" />
+    <None Include="Resources\RightBossAttack46.png" />
+    <None Include="Resources\RightBossAttack45.png" />
+    <None Include="Resources\RightBossAttack44.png" />
+    <None Include="Resources\RightBossAttack43.png" />
+    <None Include="Resources\RightBossAttack42.png" />
+    <None Include="Resources\RightBossAttack41.png" />
+    <None Include="Resources\RightBossAttack40.png" />
+    <None Include="Resources\RightBossAttack39.png" />
+    <None Include="Resources\RightBossAttack38.png" />
+    <None Include="Resources\RightBossAttack37.png" />
+    <None Include="Resources\RightBossAttack36.png" />
+    <None Include="Resources\RightBossAttack35.png" />
+    <None Include="Resources\RightBossAttack34.png" />
+    <None Include="Resources\RightBossAttack33.png" />
+    <None Include="Resources\RightBossAttack32.png" />
+    <None Include="Resources\RightBossAttack31.png" />
+    <None Include="Resources\RightBossAttack30.png" />
+    <None Include="Resources\RightBossAttack29.png" />
+    <None Include="Resources\RightBossAttack28.png" />
+    <None Include="Resources\RightBossAttack27.png" />
+    <None Include="Resources\RightBossAttack26.png" />
+    <None Include="Resources\RightBossAttack25.png" />
+    <None Include="Resources\RightBossAttack24.png" />
+    <None Include="Resources\RightBossAttack23.png" />
+    <None Include="Resources\RightBossAttack22.png" />
+    <None Include="Resources\RightBossAttack21.png" />
+    <None Include="Resources\RightBossAttack20.png" />
+    <None Include="Resources\RightBossAttack19.png" />
+    <None Include="Resources\RightBossAttack18.png" />
+    <None Include="Resources\RightBossAttack17.png" />
+    <None Include="Resources\RightBossAttack16.png" />
+    <None Include="Resources\RightBossAttack15.png" />
+    <None Include="Resources\RightBossAttack14.png" />
+    <None Include="Resources\RightBossAttack13.png" />
+    <None Include="Resources\RightBossAttack12.png" />
+    <None Include="Resources\RightBossAttack11.png" />
+    <None Include="Resources\RightBossAttack10.png" />
+    <None Include="Resources\RightBossAttack9.png" />
+    <None Include="Resources\RightBossAttack8.png" />
+    <None Include="Resources\RightBossAttack7.png" />
+    <None Include="Resources\RightBossAttack6.png" />
+    <None Include="Resources\RightBossAttack5.png" />
+    <None Include="Resources\RightBossAttack4.png" />
+    <None Include="Resources\RightBossAttack3.png" />
+    <None Include="Resources\RightBossAttack2.png" />
+    <None Include="Resources\RightBossAttack1.png" />
+    <None Include="Resources\RightBoss16.png" />
+    <None Include="Resources\RightBoss15.png" />
+    <None Include="Resources\RightBoss14.png" />
+    <None Include="Resources\RightBoss13.png" />
+    <None Include="Resources\LeftBossAttack56.png" />
+    <None Include="Resources\LeftBossAttack55.png" />
+    <None Include="Resources\LeftBossAttack54.png" />
+    <None Include="Resources\LeftBossAttack53.png" />
+    <None Include="Resources\LeftBossAttack52.png" />
+    <None Include="Resources\LeftBossAttack51.png" />
+    <None Include="Resources\LeftBossAttack50.png" />
+    <None Include="Resources\LeftBossAttack49.png" />
+    <None Include="Resources\LeftBossAttack48.png" />
+    <None Include="Resources\LeftBossAttack47.png" />
+    <None Include="Resources\LeftBossAttack46.png" />
+    <None Include="Resources\LeftBossAttack45.png" />
+    <None Include="Resources\LeftBossAttack44.png" />
+    <None Include="Resources\LeftBossAttack43.png" />
+    <None Include="Resources\LeftBossAttack42.png" />
+    <None Include="Resources\LeftBossAttack41.png" />
+    <None Include="Resources\LeftBossAttack40.png" />
+    <None Include="Resources\LeftBossAttack39.png" />
+    <None Include="Resources\LeftBossAttack38.png" />
+    <None Include="Resources\LeftBossAttack37.png" />
+    <None Include="Resources\LeftBossAttack36.png" />
+    <None Include="Resources\LeftBossAttack35.png" />
+    <None Include="Resources\LeftBossAttack34.png" />
+    <None Include="Resources\LeftBossAttack33.png" />
+    <None Include="Resources\LeftBossAttack32.png" />
+    <None Include="Resources\LeftBossAttack31.png" />
+    <None Include="Resources\LeftBossAttack30.png" />
+    <None Include="Resources\LeftBossAttack29.png" />
+    <None Include="Resources\LeftBossAttack28.png" />
+    <None Include="Resources\LeftBossAttack27.png" />
+    <None Include="Resources\LeftBossAttack26.png" />
+    <None Include="Resources\LeftBossAttack25.png" />
+    <None Include="Resources\LeftBossAttack24.png" />
+    <None Include="Resources\LeftBossAttack23.png" />
+    <None Include="Resources\LeftBossAttack22.png" />
+    <None Include="Resources\LeftBossAttack21.png" />
+    <None Include="Resources\LeftBossAttack20.png" />
+    <None Include="Resources\LeftBossAttack19.png" />
+    <None Include="Resources\LeftBossAttack18.png" />
+    <None Include="Resources\LeftBossAttack17.png" />
+    <None Include="Resources\LeftBossAttack16.png" />
+    <None Include="Resources\LeftBossAttack15.png" />
+    <None Include="Resources\LeftBossAttack14.png" />
+    <None Include="Resources\LeftBossAttack13.png" />
+    <None Include="Resources\LeftBossAttack12.png" />
+    <None Include="Resources\LeftBossAttack11.png" />
+    <None Include="Resources\LeftBossAttack10.png" />
+    <None Include="Resources\LeftBossAttack9.png" />
+    <None Include="Resources\LeftBossAttack8.png" />
+    <None Include="Resources\LeftBossAttack7.png" />
+    <None Include="Resources\LeftBossAttack6.png" />
+    <None Include="Resources\LeftBossAttack5.png" />
+    <None Include="Resources\LeftBossAttack4.png" />
+    <None Include="Resources\LeftBossAttack3.png" />
+    <None Include="Resources\LeftBossAttack2.png" />
+    <None Include="Resources\LeftBossAttack1.png" />
+    <None Include="Resources\LeftBossAttack64.png" />
+    <None Include="Resources\LeftBossAttack63.png" />
+    <None Include="Resources\LeftBossAttack62.png" />
+    <None Include="Resources\LeftBossAttack61.png" />
+    <None Include="Resources\LeftBossAttack60.png" />
+    <None Include="Resources\LeftBossAttack59.png" />
+    <None Include="Resources\LeftBossAttack58.png" />
+    <None Include="Resources\LeftBossAttack57.png" />
+    <None Include="Resources\LeftBossDeath21F.png" />
+    <None Include="Resources\LeftBossDeath20F.png" />
+    <None Include="Resources\LeftBossDeath19F.png" />
+    <None Include="Resources\LeftBossDeath18F.png" />
+    <None Include="Resources\RightBossDeath21F.png" />
+    <None Include="Resources\RightBossDeath20F.png" />
+    <None Include="Resources\RightBossDeath19F.png" />
+    <None Include="Resources\RightBossDeath18F.png" />
+    <None Include="Resources\RightBossDeath21.png" />
+    <None Include="Resources\RightBossDeath20.png" />
+    <None Include="Resources\RightBossDeath19.png" />
+    <None Include="Resources\RightBossDeath18.png" />
+    <None Include="Resources\RightBossDeath17.png" />
+    <None Include="Resources\RightBossDeath16.png" />
+    <None Include="Resources\RightBossDeath15.png" />
+    <None Include="Resources\RightBossDeath14.png" />
+    <None Include="Resources\RightBossDeath13.png" />
+    <None Include="Resources\RightBossDeath12.png" />
+    <None Include="Resources\RightBossDeath11.png" />
+    <None Include="Resources\RightBossDeath10.png" />
+    <None Include="Resources\RightBossDeath9.png" />
+    <None Include="Resources\RightBossDeath8.png" />
+    <None Include="Resources\RightBossDeath7.png" />
+    <None Include="Resources\RightBossDeath6.png" />
+    <None Include="Resources\RightBossDeath5.png" />
+    <None Include="Resources\RightBossDeath4.png" />
+    <None Include="Resources\RightBossDeath3.png" />
+    <None Include="Resources\RightBossDeath2.png" />
+    <None Include="Resources\RightBossDeath1.png" />
+    <None Include="Resources\LeftBossDeath21.png" />
+    <None Include="Resources\LeftBossDeath20.png" />
+    <None Include="Resources\LeftBossDeath19.png" />
+    <None Include="Resources\LeftBossDeath18.png" />
+    <None Include="Resources\LeftBossDeath17.png" />
+    <None Include="Resources\LeftBossDeath16.png" />
+    <None Include="Resources\LeftBossDeath15.png" />
+    <None Include="Resources\LeftBossDeath14.png" />
+    <None Include="Resources\LeftBossDeath13.png" />
+    <None Include="Resources\LeftBossDeath12.png" />
+    <None Include="Resources\LeftBossDeath11.png" />
+    <None Include="Resources\LeftBossDeath10.png" />
+    <None Include="Resources\LeftBossDeath9.png" />
+    <None Include="Resources\LeftBossDeath8.png" />
+    <None Include="Resources\LeftBossDeath7.png" />
+    <None Include="Resources\LeftBossDeath6.png" />
+    <None Include="Resources\LeftBossDeath5.png" />
+    <None Include="Resources\LeftBossDeath4.png" />
+    <None Include="Resources\LeftBossDeath3.png" />
+    <None Include="Resources\LeftBossDeath2.png" />
+    <None Include="Resources\LeftBossDeath1.png" />
+    <None Include="Resources\LeftBossDeath52.png" />
+    <None Include="Resources\LeftBossDeath42.png" />
+    <None Include="Resources\LeftBossDeath32.png" />
+    <None Include="Resources\LeftBossDeath212.png" />
+    <None Include="Resources\LeftBossDeath202.png" />
+    <None Include="Resources\LeftBossDeath23.png" />
+    <None Include="Resources\LeftBossDeath192.png" />
+    <None Include="Resources\LeftBossDeath182.png" />
+    <None Include="Resources\LeftBossDeath172.png" />
+    <None Include="Resources\LeftBossDeath162.png" />
+    <None Include="Resources\LeftBossDeath152.png" />
+    <None Include="Resources\LeftBossDeath141.png" />
+    <None Include="Resources\LeftBossDeath131.png" />
+    <None Include="Resources\LeftBossDeath121.png" />
+    <None Include="Resources\LeftBossDeath111.png" />
+    <None Include="Resources\LeftBossDeath101.png" />
+    <None Include="Resources\LeftBossDeath110.png" />
+    <None Include="Resources\LeftBossDeath91.png" />
+    <None Include="Resources\LeftBossDeath81.png" />
+    <None Include="Resources\LeftBossDeath71.png" />
+    <None Include="Resources\LeftBossDeath61.png" />
+    <None Include="Resources\LeftBossDeath51.png" />
+    <None Include="Resources\LeftBossDeath41.png" />
+    <None Include="Resources\LeftBossDeath31.png" />
+    <None Include="Resources\LeftBossDeath211.png" />
+    <None Include="Resources\LeftBossDeath201.png" />
+    <None Include="Resources\LeftBossDeath22.png" />
+    <None Include="Resources\LeftBossDeath191.png" />
+    <None Include="Resources\LeftBossDeath181.png" />
+    <None Include="Resources\LeftBossDeath171.png" />
+    <None Include="Resources\LeftBossDeath161.png" />
+    <None Include="Resources\LeftBossDeath151.png" />
+    <None Include="Resources\RightBossRun13.png" />
+    <None Include="Resources\RightBossRun12.png" />
+    <None Include="Resources\RightBossRun11.png" />
+    <None Include="Resources\RightBossRun10.png" />
+    <None Include="Resources\RightBossRun9.png" />
+    <None Include="Resources\RightBossRun8.png" />
+    <None Include="Resources\RightBossRun7.png" />
+    <None Include="Resources\RightBossRun6.png" />
+    <None Include="Resources\RightBossRun5.png" />
+    <None Include="Resources\RightBossRun4.png" />
+    <None Include="Resources\RightBossRun3.png" />
+    <None Include="Resources\RightBossRun2.png" />
+    <None Include="Resources\RightBossRun1.png" />
+    <None Include="Resources\LeftBossRun14.png" />
+    <None Include="Resources\LeftBossRun13.png" />
+    <None Include="Resources\LeftBossRun12.png" />
+    <None Include="Resources\LeftBossRun11.png" />
+    <None Include="Resources\LeftBossRun10.png" />
+    <None Include="Resources\LeftBossRun9.png" />
+    <None Include="Resources\LeftBossRun8.png" />
+    <None Include="Resources\LeftBossRun7.png" />
+    <None Include="Resources\LeftBossRun6.png" />
+    <None Include="Resources\LeftBossRun5.png" />
+    <None Include="Resources\LeftBossRun4.png" />
+    <None Include="Resources\LeftBossRun3.png" />
+    <None Include="Resources\LeftBossRun2.png" />
+    <None Include="Resources\LeftBossRun1.png" />
+    <None Include="Resources\LeftBossIdle10.png" />
+    <None Include="Resources\LeftBossIdle9.png" />
+    <None Include="Resources\LeftBossIdle8.png" />
+    <None Include="Resources\LeftBossIdle7.png" />
+    <None Include="Resources\LeftBossIdle6.png" />
+    <None Include="Resources\LeftBossIdle5.png" />
+    <None Include="Resources\LeftBossIdle4.png" />
+    <None Include="Resources\LeftBossIdle3.png" />
+    <None Include="Resources\LeftBossIdle2.png" />
+    <None Include="Resources\LeftBossIdle1.png" />
+    <None Include="Resources\LeftIdle10.png" />
+    <None Include="Resources\LeftIdle9.png" />
+    <None Include="Resources\LeftIdle8.png" />
+    <None Include="Resources\LeftIdle7.png" />
+    <None Include="Resources\LeftIdle6.png" />
+    <None Include="Resources\LeftIdle5.png" />
+    <None Include="Resources\LeftIdle4.png" />
+    <None Include="Resources\LeftIdle3.png" />
+    <None Include="Resources\LeftIdle2.png" />
+    <None Include="Resources\LeftIdle1.png" />
+    <None Include="Resources\Death6.png" />
+    <None Include="Resources\Death5.png" />
+    <None Include="Resources\Death4.png" />
+    <None Include="Resources\Death3.png" />
+    <None Include="Resources\Death2.png" />
+    <None Include="Resources\Death1.png" />
+    <None Include="Resources\FrameTwo.png" />
+    <None Include="Resources\FrameThree.png" />
+    <None Include="Resources\FrameOne.png" />
+    <None Include="Resources\Frame30.png" />
+    <None Include="Resources\Frame29.png" />
+    <None Include="Resources\Frame28.png" />
+    <None Include="Resources\Frame27.png" />
+    <None Include="Resources\Frame26.png" />
+    <None Include="Resources\Frame25.png" />
+    <None Include="Resources\Frame24.png" />
+    <None Include="Resources\Frame23.png" />
+    <None Include="Resources\Frame22.png" />
+    <None Include="Resources\Frame21.png" />
+    <None Include="Resources\Frame20.png" />
+    <None Include="Resources\Frame19.png" />
+    <None Include="Resources\Frame18.png" />
+    <None Include="Resources\Frame17.png" />
+    <None Include="Resources\Frame16.png" />
+    <None Include="Resources\Frame15.png" />
+    <None Include="Resources\Frame14.png" />
+    <None Include="Resources\Frame13.png" />
+    <None Include="Resources\Frame12.png" />
+    <None Include="Resources\Frame11.png" />
+    <None Include="Resources\Frame10.png" />
+    <None Include="Resources\Frame9.png" />
+    <None Include="Resources\Frame8.png" />
+    <None Include="Resources\Frame7.png" />
+    <None Include="Resources\Frame6.png" />
+    <None Include="Resources\Frame5.png" />
+    <None Include="Resources\Frame4.png" />
+    <None Include="Resources\ShotGun.png" />
+    <None Include="Resources\RedKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

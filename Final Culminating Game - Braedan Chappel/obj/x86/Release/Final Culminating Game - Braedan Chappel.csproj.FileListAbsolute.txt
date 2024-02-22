@@ -1,0 +1,9 @@
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\bin\Release\Final Culminating Game - Braedan Chappel.exe
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\bin\Release\Final Culminating Game - Braedan Chappel.pdb
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\obj\x86\Release\Final Culminating Game - Braedan Chappel.csproj.AssemblyReference.cache
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\obj\x86\Release\Final_Culminating_Game___Braedan_Chappel.Form1.resources
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\obj\x86\Release\Final_Culminating_Game___Braedan_Chappel.Properties.Resources.resources
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\obj\x86\Release\Final Culminating Game - Braedan Chappel.csproj.GenerateResource.cache
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\obj\x86\Release\Final Culminating Game - Braedan Chappel.csproj.CoreCompileInputs.cache
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\obj\x86\Release\Final Culminating Game - Braedan Chappel.exe
+C:\Users\braed\Desktop\Final Culminating\Final Culminating Game - Braedan Chappel\Final Culminating Game - Braedan Chappel\obj\x86\Release\Final Culminating Game - Braedan Chappel.pdb

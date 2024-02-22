@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c782f2ba-7932-42bd-aff0-fd77e9222f44": {
+      "ProjectGuid": "c782f2ba-7932-42bd-aff0-fd77e9222f44",
+      "DisplayName": "Final Culminating Game - Braedan Chappel",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
